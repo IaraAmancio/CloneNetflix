@@ -1,0 +1,37 @@
+@import "styles/header.css";
+@import "styles/main.css";
+@import "styles/perguntas-frequentes.css";
+@import "styles/fontes.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Netflix Sans';
+    color: white;
+    background-image: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.95) 100%),
+        url("assets/background_N.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black.;
+}
+
+
+
+
+
+
+
+
+
+
+

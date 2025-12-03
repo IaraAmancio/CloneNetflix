@@ -1,0 +1,158 @@
+@import "./fontes.css";
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telaInicial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.telaInicial .content-principal{
+    width: 100%;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 100px;
+    gap: 6px;
+}
+
+.telaInicial .content-principal h1{
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+.telaInicial .content-principal h3{
+    font-size: 1.3rem;
+    font-weight: 550;
+    margin-top: 20px;
+}
+
+.telaInicial .content-principal h4{
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+
+.telaInicial form{
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.telaInicial form input{
+    width: 65%;
+    padding: 0 15px 0 15px;
+    appearance: none;
+    border: none;
+    height: 60px;
+    background: rgba(0,0,1,0.75);
+    border: 1px solid #c2c2c2;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: white;
+}
+
+.telaInicial form input::hover{
+    color: white;
+}
+
+.telaInicial form button{
+    flex: 1;
+    background-color: #E50914;
+    padding: 8px 15px;
+    border-radius: 4px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+.content-saiba-mais{
+    display: flex;
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#emAlta{
+  max-width: 75%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.carrossel {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+.slides img {
+  width: 200px;
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+  padding: 15px;
+}
+
+.direita, .esquerda {
+  position: absolute;
+  z-index: 10;
+  height: 40%;
+ // transform: translateY(-50%);
+  border: none;
+  background-color: #121212;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.esquerda{
+    left: 10px;
+}
+
+.direita{
+    right: 10px;
+}
+
+/*
+button:hover {
+  background-color: rgba(0,0,0,0.75);
+}
+*/

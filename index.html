@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <header>
+        <div>
+            <img class="logoNetflix" src="assets/Netflix_Logo.png" alt="logo Netflix">    
+        </div>
+        <div class="options">
+            <div class="custom-select">
+                <i class="fa-solid fa-language"></i>
+                <span>Português</span>
+                <span class="seta"> </span>
+                <select>
+                    <option value="portugues">Português</option>
+                    <option value="english">English</option>
+                </select>
+            </div>        
+            <button class="btn enter">Entrar</button>
+        </div>    
+    </header>
+
+    <main>
+        <section class="telaInicial">
+            <div class="content-principal">
+                <h1>Filmes, séries e muito mais, sem limites</h1>
+                <h3>A partir de R$ 20,90. Cancele quando quiser.</h3>
+                <h4>Quer assistir? Informe seu email para criar ou reiniciar sua assinatura.</h4>
+
+                <form>
+                    <input type="email" placeholder="Email">
+                    <button>Vamos lá</button>
+                </form>
+            </div>     
+            <div class="content-saiba-mais">
+                <img src="assets/popcorn-icon.png">
+                <article>
+                    <div>
+                        <h3>A Netflix que você adora por apenas R$ 20,90.</h3>
+                        <h4>Aproveite nossa opção mais acessível, o plano com anúncios.</h4>
+                    </div>
+                    <button>Saiba mais</button>
+                </article>
+            </div>    
+        </section>
+
+        <section id="emAlta">
+            <h2>Em alta</h2>
+            <div class="carrossel">
+                <button class="esquerda">&#10094;</button>
+                <div class="slides">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 1">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 2">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 3">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 4">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 5">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 6">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 7">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 8">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 9">
+                    <img class="filme" src="assets/filmes em alta/naruto.jpg" alt="Carrossel HTML CSS Imagem 10">
+                </div>
+                <button class="direita">&#10095;</button>
+            </div>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
