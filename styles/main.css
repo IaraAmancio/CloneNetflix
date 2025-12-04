@@ -8,6 +8,7 @@ main{
 }
 
 .telaInicial{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,10 +16,11 @@ main{
 
 .telaInicial .content-principal{
     width: 100%;
-    max-width: 60%;
+    max-width: 50%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     margin-top: 100px;
     gap: 6px;
 }
@@ -30,23 +32,30 @@ main{
 }
 
 .telaInicial .content-principal h3{
-    font-size: 1.3rem;
-    font-weight: 550;
     margin-top: 20px;
 }
 
+h3{
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
 .telaInicial .content-principal h4{
+    margin-top: 30px;
+}
+
+h4{
     font-size: 1rem;
     font-weight: 100;
-    margin-top: 30px;
 }
 
 
 .telaInicial form{
     margin-top: 15px;
     display: flex;
+    justify-content: center;
     gap: 8px;
-    width: 100%;
+    width: 90%;
 }
 
 .telaInicial form input{
@@ -59,10 +68,6 @@ main{
     border: 1px solid #c2c2c2;
     border-radius: 4px;
     font-size: 1rem;
-    color: white;
-}
-
-.telaInicial form input::hover{
     color: white;
 }
 
@@ -86,8 +91,52 @@ main{
 
 
 .content-saiba-mais{
+    width: 100%;
+    max-width: 75%;
     display: flex;
-    margin-top: 100px;
+    gap: 20px;
+    margin: 300px 0 0 0;
+    transition: all 200ms ease-in-out;
+}
+
+.content-saiba-mais:hover{
+  z-index: 2;
+  transform: scale(1.035);
+}
+
+.content-saiba-mais .content{
+    width: 100%;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+    border-radius: 15px;
+    background: radial-gradient(circle, #251733, #16193e);
+}
+
+.content-saiba-mais .content:hover{
+    background: radial-gradient(circle, #482566, #161d52);
+}
+
+.content-saiba-mais .content button{
+    background: #404358;
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.content-saiba-mais .content button:hover{
+    background: #2e3659;
+}
+
+.content-saiba-mais img{
+    width: 75px;
+    height: auto;
 }
 
 
@@ -102,57 +151,5 @@ main{
 
 
 
-#emAlta{
-  max-width: 75%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
 
-.carrossel {
-  display: flex;
-  align-items: center;
-  height: 300px;
-  overflow: hidden;
-  position: relative;
-}
-.slides {
-  display: flex;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-.slides img {
-  width: 200px;
-  max-width: 100%;
-  object-fit: contain;
-  display: block;
-  padding: 15px;
-}
 
-.direita, .esquerda {
-  position: absolute;
-  z-index: 10;
-  height: 40%;
- // transform: translateY(-50%);
-  border: none;
-  background-color: #121212;
-  padding: 8px;
-  border-radius: 8px;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.esquerda{
-    left: 10px;
-}
-
-.direita{
-    right: 10px;
-}
-
-/*
-button:hover {
-  background-color: rgba(0,0,0,0.75);
-}
-*/

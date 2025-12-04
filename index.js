@@ -1,7 +1,7 @@
 
 
-const slides = document.querySelector('.slides');
-const imagens = document.querySelectorAll('.slides img');
+const slides = document.querySelector('.filmes');
+const imagens = document.querySelectorAll('.filmes li img');
 const btnEsq = document.querySelector('.esquerda');
 const btnDir = document.querySelector('.direita');
 

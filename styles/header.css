@@ -8,12 +8,6 @@ header{
     margin-top: 30px;
 }
 
-header .options{
-    display: flex;
-    align-items: start;
-    gap: 10px;
-}
-
 header button{
     background-color: #E50914;
     padding: 8px 15px;
@@ -25,16 +19,25 @@ header button{
     border: 0;
 }
 
+header .options{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+
 header .custom-select{
     position: relative;
-    overflow: hidden;
-    padding: 6px 25px;
+    padding: 6px 35px 6px 10px; //espaço para o ícone + seta 
+    background: rgba(0,0,0,0.2);
+    border: 0.1px solid #757575;
     border-radius: 4px;
-    background: rgba(0,0,0,0.1);
-    border: 1px solid #c2c2c2;
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 6px;
 }
+
 
 header .custom-select span{
     color: white;
@@ -42,8 +45,12 @@ header .custom-select span{
     font-weight: 300;
 }
 
-.seta{
-    content: "";
+header .custom-select i{
+    font-size: 12px;
+}
+
+
+header .custom-select .seta {
     position: absolute;
     right: 15px;
     top: 50%;
@@ -73,6 +80,7 @@ header .custom-select select {
     margin: 0;
     padding: 0;
     border: none;
+    box-shadow: none;
     outline: none;
     background: transparent;
     opacity: 0; 
